@@ -3,7 +3,8 @@ import {model, Schema} from "mongoose"
 const vehiculoSchema = new Schema({
     id_vehiculo:{
         type: Number,
-        required: true
+        required: true, 
+        unique: true
     },
     matricula:String,
     modelo:String,
